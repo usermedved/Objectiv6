@@ -1,0 +1,15 @@
+﻿Console.WriteLine("Введите k1: ");
+double coeff_k1=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите b1: ");
+double coeff_b1=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите k2: ");
+double coeff_k2=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите b2: ");
+double coeff_b2=Convert.ToInt32(Console.ReadLine());
+double IntersectionPoint_X = 0;
+double IntersectionPoint_Y1 = 0;
+double IntersectionPoint_Y2 = 0;
+IntersectionPoint_X = (coeff_b2 - coeff_b1) / (coeff_k1 - coeff_k2);
+IntersectionPoint_Y1 = coeff_k1 * IntersectionPoint_X + coeff_b1;
+IntersectionPoint_Y2 = coeff_k2 * IntersectionPoint_X + coeff_b2;
+Console.WriteLine($"Точка пересечения [{IntersectionPoint_Y1};{IntersectionPoint_Y2}]");
